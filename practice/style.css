@@ -1,0 +1,27 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#container{
+    /* height: 42rem;
+    width: 90rem; */
+    border: 5px rgb(9, 175, 125) solid;
+    background-image: url('img/bgimg.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    padding: 10rem;
+    margin: 0rem;
+    height: 55rem;
+    background-attachment: fixed;
+}
+h1{
+    color:white;
+}
+p{
+    color: white;
+}
+#logo{
+    height: 5em;
+    width: 5em;
+}
