@@ -75,6 +75,8 @@ ul{
     align-items: flex-end;
     justify-content: center;
     margin-bottom: 25px;
+    font-weight: bold;
+    color: white;
 }
 .ff2{
     display: flex;
