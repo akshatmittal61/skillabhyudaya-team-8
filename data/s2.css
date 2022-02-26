@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    border: 0;
+}
+body{
+    background-color: #A267AC;
+}
+ul{
+    list-style-type: none;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar{
+    color: #FFBCD1;
+    background: #6867AC;
+    height: 80px;
+}
+.navbar .logo{
+    font-size: xxx-large;
+    font-weight: bolder;
+    
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+.navbar a:hover{
+    color: cyan;
+    padding-top: calc(2em - 2px);
+}
+.navbar ul li {
+    margin-left: 20px;
+  }
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+.btn{
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 500 0 50%;
+    display: flex;
+    padding: 14px;
+    background-color: #F2789F;
+    text-align: center;
+    color: #EDD2F3;
+}
+.btn:hover{
+    background-color: rgb(82, 20, 182);
+    cursor: pointer;
+}
+.front{
+    height: 400px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.ff{
+    text-align: center;
+    align-items: center;
+    /* display: flex; */
+    height: 100%;
+    align-items: center;
+}
+.para{
+    font-size: 30px;
+    display: flex;
+    height: 50%;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.ff2{
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 4px;
+}
