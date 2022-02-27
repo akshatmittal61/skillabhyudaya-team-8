@@ -215,6 +215,7 @@ In FORCE we maintain a high level of respect towards everyone and we expect ever
 
 -   **Team members** - https://github.com/pkspyder007/force-website/tree/master/data
 -   **Images** - https://github.com/pkspyder007/force-website/tree/master/public/images
+-   **Website content** - https://docs.google.com/document/d/1yDtAeGRE9QR8xz6gRWB2BM11B0aNZgGE1F616oJ5BhU/edit?usp=sharing
 
 ---
 
