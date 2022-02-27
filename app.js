@@ -43,13 +43,4 @@ for (let i = 0; i < colors.length; i++) {
 	t += `<button class="btn btn-${colors[i]}">Click Me</button>`;
 	colorContainer.innerHTML = s;
 	buttonContainer.innerHTML = t;
-	/* console.log(`
-.btn.btn-${colors[i]} {
-	background-color: var(--${colors[i]});
-	color: var(--bgcolor);
-}
-.btn.btn-${colors[i]}:active,
-.btn.btn-${colors[i]}:focus {
-	outline: 2px solid var(--${colors[i]});
-}`); */
 }
