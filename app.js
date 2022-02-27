@@ -1,6 +1,8 @@
 const shadowContainer = document.querySelector(".shadow-container");
 const colorContainer = document.querySelector(".color-container");
-let s = "";
+const buttonContainer = document.querySelector(".button-container");
+let s = "",
+	t = "";
 const shadowValues = [2, 4, 6, 8, 12, 16, 24];
 const colors = [
 	"red",
@@ -38,5 +40,16 @@ for (let i = 0; i < colors.length; i++) {
     <span style="background-color: var(--${colors[i]}-700)"></span>
     </div>
     `;
+	t += `<button class="btn btn-${colors[i]}">Click Me</button>`;
 	colorContainer.innerHTML = s;
+	buttonContainer.innerHTML = t;
+	/* console.log(`
+.btn.btn-${colors[i]} {
+	background-color: var(--${colors[i]});
+	color: var(--bgcolor);
+}
+.btn.btn-${colors[i]}:active,
+.btn.btn-${colors[i]}:focus {
+	outline: 2px solid var(--${colors[i]});
+}`); */
 }
