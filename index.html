@@ -15,6 +15,11 @@
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
 			rel="stylesheet"
 		/>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<link
 			rel="shortcut icon"
@@ -28,7 +33,7 @@
 		<title>FORCE - Forum For Computer Engineering - IIIT UNA</title>
 	</head>
 	<body>
-		<header class="header">
+		<header class="header" data-aos="fade-down">
 			<div class="header-logo">
 				<a href="/">
 					<img src="./images/logo.png" alt="FORCE" />
@@ -67,6 +72,16 @@
 				</ul>
 			</nav>
 		</header>
+		<section class="hero">
+			<div
+				class="back-img"
+				data-aos="zoom-in"
+				data-aos-duration="2000"
+				style="background-image: url('./images/logo.png')"
+			></div>
+		</section>
+		<div class="cover"></div>
+		<main class="main"></main>
 		<script src="./app.js"></script>
 	</body>
 </html>
