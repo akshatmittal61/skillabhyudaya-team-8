@@ -58,7 +58,7 @@ ul{
     background-color: salmon;
     cursor: pointer;
     box-shadow: 12px 12px 12px cyan;
-    transform: translate(-3px,-3px) rotate(-360deg);
+    transform: translate(-3px,-3px) rotate(-5400deg);
 }
 .front{
     height: 400px;
