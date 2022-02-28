@@ -2,6 +2,7 @@
 @import "./inputs.css";
 @import "./responsive.css";
 @import "./config.css";
+@import "./header.css";
 
 body {
 	font-family: Cabin, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

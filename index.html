@@ -4,6 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<link
 			rel="shortcut icon"
@@ -17,70 +28,45 @@
 		<title>FORCE - Forum For Computer Engineering - IIIT UNA</title>
 	</head>
 	<body>
-		<div class="shadow-container"></div>
-		<div class="elements">
-			<a href="https://akshatmittal61.github.io/akshatmittal61/">
-				Akshat Mittal
-			</a>
-			<input type="text" placeholder="Your name" />
-			<textarea name="" id="" placeholder="Content"></textarea>
-			<select name="" id="">
-				<option value="">1</option>
-				<option value="">2</option>
-				<option value="">3</option>
-			</select>
-		</div>
-		<div class="button-container"></div>
-		<div class="color-container"></div>
-		<div class="row-container">
-			<div class="row">
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
-				<div class="col-lg-20 col-md-33 col-sm-50">
-					<div class="a"></div>
-				</div>
+		<header class="header">
+			<div class="header-logo">
+				<a href="/">
+					<img src="./images/logo.png" alt="FORCE" />
+				</a>
 			</div>
-		</div>
+			<nav class="header-nav">
+				<ul class="header-nav-ul">
+					<li class="header-nav-li">
+						<a href="/about" class="header-nav-li__a">
+							<span class="header-nav-li__icon">
+								<span class="material-icons">info</span>
+							</span>
+							<span class="header-nav-li__text"> About </span>
+						</a>
+					</li>
+					<li class="header-nav-li">
+						<a href="/wall-of-fame" class="header-nav-li__a">
+							<span class="header-nav-li__icon">
+								<span class="material-icons">
+									emoji_events
+								</span>
+							</span>
+							<span class="header-nav-li__text">
+								Wall of Fame
+							</span>
+						</a>
+					</li>
+					<li class="header-nav-li">
+						<a href="/team" class="header-nav-li__a">
+							<span class="header-nav-li__icon">
+								<span class="material-icons"> groups </span>
+							</span>
+							<span class="header-nav-li__text"> Team </span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 		<script src="./app.js"></script>
 	</body>
 </html>
