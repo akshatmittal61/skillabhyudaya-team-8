@@ -17,11 +17,14 @@ body{
 		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 html::-webkit-scrollbar{
-    width: 1vw;
-
+    width: 0.5vw;
+    scroll-behavior: smooth;
+    /* width: 4px; */
 }
 html::-webkit-scrollbar-thumb{
     background-color: #0583f2;
+    border-radius: 12px;
+    
 }
 html::-webkit-scrollbar-track{
     background-color: silver;
@@ -37,9 +40,12 @@ html::-webkit-scrollbar-track{
     #627894,
     #A0AEC1,
     #466289,
-    #DBE8F9,
-    #FA6121,
-    #FFB739);
+    #DBE8F9
+    /* #FA6121, */
+    /* #FFB739 */
+    )
+
+    ;
 }
 @keyframes an{
     0%{
@@ -58,7 +64,7 @@ html::-webkit-scrollbar-track{
     /* font-weight: bold; */
     font-size: 60px;
     font-weight: bolder;
-    color: rgb(4, 124, 172);
+    color: orange;
     /* background-color: orange; */
 }
 
@@ -68,7 +74,7 @@ html::-webkit-scrollbar-track{
 }
 .card{
     display: grid;
-    grid-template-columns: 250px;
+    grid-template-columns: 300px;
     grid-template-rows: 250px 300px;
     background: white;
     border-bottom-right-radius: 18px;
@@ -98,6 +104,7 @@ ul{
     background-color: #fff;
     height: 100%;
     width: 100%;
+    image
 }
 img{
     border-top-left-radius: 15px;
