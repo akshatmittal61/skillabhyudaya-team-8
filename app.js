@@ -2,6 +2,7 @@ const hero = document.querySelector(".hero");
 const header = document.querySelector("header");
 const backImg = document.querySelector(".back-img");
 const about = document.querySelector(".about");
+const nav = document.querySelector(".nav");
 const navButton = document.querySelector(".nav-button");
 const navCheck = document.querySelector(".nav-check");
 
@@ -119,4 +120,10 @@ window.addEventListener("scroll", () => {
 
 navButton.addEventListener("click", () => {
 	navCheck.classList.toggle("nav-checked");
+	if (navCheck.classList.contains("nav-checked")) nav.style.zIndex = 100;
+	else nav.style.zIndex = -1;
 });
+window.onload = () => {
+	if (navCheck.classList.contains("nav-checked")) nav.style.zIndex = 100;
+	else nav.style.zIndex = 15;
+};
