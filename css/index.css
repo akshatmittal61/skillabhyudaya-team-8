@@ -52,7 +52,9 @@
   padding: 0 5%;
 }
 .about-box {
-  margin: 5rem 2rem;
+  width: 100%;
+  height: 100%;
+  margin: 2.5rem 2rem;
   position: relative;
   padding: 0 2.5rem;
 }
@@ -62,11 +64,11 @@
   top: 0;
   left: 0;
   width: 5px;
-  height: 100%;
+  height: 95%;
   background-color: var(--primary-4);
 }
 .about-box > * {
-  width: 70%;
+  width: 100%;
   margin: 2rem 0;
 }
 .about-box h1 {
@@ -74,21 +76,122 @@
   line-height: 2.5rem;
   margin-top: 0;
 }
-.about-box p, .about-box ul {
-  width: 50%;
+.about-box p {
+  width: 90%;
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
-.about-box li {
-  padding: 0.25rem 0.5rem;
+.about-box ul {
+  padding: 0 1rem;
 }
-.about-box li::marker {
+.about-box ul li {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: 0.25rem 0.75rem;
+}
+.about-box ul li::marker {
   content: "\e86c";
   font-family: "Material Icons";
+  font-size: 1.25rem;
 }
-.about-box:nth-child(2n) {
-  margin: 0 50%;
+
+.what {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/Program.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.what-container {
   width: 100%;
+  height: 100%;
+  color: var(--bgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.what-container h1 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  padding: 1.75rem 0.5rem;
+}
+.what-blocks {
+  width: 100%;
+}
+.what-block {
+  width: 100%;
+  height: 100%;
+  padding: 1.75rem 2.5rem;
+}
+.what-block > * {
+  margin: 1rem 0;
+}
+.what-block h2 {
+  width: fit-content;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 0.1rem;
+  position: relative;
+}
+.what-block h2::after {
+  content: "";
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 125%;
+  height: 3px;
+  background-color: var(--primary-4);
+}
+.what-block p {
+  font-size: 1.125rem;
+  line-height: 1.35rem;
+}
+.what-block ul {
+  padding: 0 1rem;
+}
+.what-block ul li {
+  font-size: 1.1rem;
+  line-height: 1.35rem;
+  padding: 0.25rem 0.75rem;
+}
+.what-block ul li::marker {
+  content: "\e86c";
+  font-family: "Material Icons";
+  font-size: 1rem;
+}
+.what-quote {
+  margin: 0.75rem 0;
+}
+.what-quote blockquote {
+  padding: 1rem 2rem;
+  background-color: var(--bgcolor);
+  color: var(--tcolor);
+  border: 2px solid var(--indigo);
+  position: relative;
+  transform-style: preserve-3d;
+}
+.what-quote blockquote::before {
+  content: "";
+  position: absolute;
+  background-color: var(--indigo);
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  left: 1%;
+  transform: translateZ(-1px);
+  transition: all var(--transition-time) ease-in-out;
+}
+.what-quote blockquote:hover::before {
+  top: 0;
+  left: 0;
+}
+.what-quote blockquote cite {
+  border-left: 4px solid var(--back-shadow);
+  padding: 0.1rem 0.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */

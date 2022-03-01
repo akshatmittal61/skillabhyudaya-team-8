@@ -1,3 +1,4 @@
+const hero = document.querySelector(".hero");
 const header = document.querySelector("header");
 const backImg = document.querySelector(".back-img");
 const about = document.querySelector(".about");
@@ -42,10 +43,12 @@ const backImgOnScroll = () => {
 		backImgBgColor = `rgba(240,240,240,${window.scrollY / (100 * vh)})`;
 		backImgImg = `url('./images/logo.png')`;
 		backImgSize = `${45 * (2 - window.scrollY / (100 * vh))}%`;
+		hero.style.zIndex = 5;
 	} else {
 		backImgBgColor = `var(--bgcolor)`;
 		backImgImg = "none";
 		backImgSize = "0";
+		hero.style.zIndex = -1;
 	}
 	backImg.style.backgroundColor = backImgBgColor;
 	backImg.style.backgroundImage = backImgImg;
