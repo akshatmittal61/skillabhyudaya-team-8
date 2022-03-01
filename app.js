@@ -37,6 +37,22 @@ let aboutOpacity = 0;
 const vh = window.innerHeight / 100;
 const t = 150 * vh;
 
+const backImgOnScroll = () => {
+	if (window.scrollY < 100 * vh) {
+		backImgBgColor = `rgba(240,240,240,${window.scrollY / (100 * vh)})`;
+		backImgImg = `url('./images/logo.png')`;
+		backImgSize = `${45 * (2 - window.scrollY / (100 * vh))}%`;
+	} else {
+		backImgBgColor = `var(--bgcolor)`;
+		backImgImg = "none";
+		backImgSize = "0";
+	}
+	backImg.style.backgroundColor = backImgBgColor;
+	backImg.style.backgroundImage = backImgImg;
+	backImg.style.height = backImgSize;
+	backImg.style.width = backImgSize;
+};
+
 const headerOnScroll = () => {
 	if (window.scrollY < 100 * vh) {
 		headerIn = `${15 * (window.scrollY / (100 * vh) - 1)}vh`;
@@ -90,19 +106,7 @@ const aboutOnScroll = () => {
 };
 
 window.addEventListener("scroll", () => {
-	if (window.scrollY < 100 * vh) {
-		backImgBgColor = `rgba(240,240,240,${window.scrollY / (100 * vh)})`;
-		backImgImg = `url('./images/logo.png')`;
-		backImgSize = `${45 * (2 - window.scrollY / (100 * vh))}%`;
-	} else {
-		backImgBgColor = `var(--bgcolor)`;
-		backImgImg = "none";
-		backImgSize = "0";
-	}
 	// headerOnScroll();
 	aboutOnScroll();
-	backImg.style.backgroundColor = backImgBgColor;
-	backImg.style.backgroundImage = backImgImg;
-	backImg.style.height = backImgSize;
-	backImg.style.width = backImgSize;
+	backImgOnScroll();
 });

@@ -66,16 +66,29 @@
   background-color: var(--primary-4);
 }
 .about-box > * {
-  width: 60%;
+  width: 70%;
   margin: 2rem 0;
 }
 .about-box h1 {
   font-size: 2rem;
   line-height: 2.5rem;
+  margin-top: 0;
 }
-.about-box p {
+.about-box p, .about-box ul {
+  width: 50%;
   font-size: 1.25rem;
   line-height: 1.5rem;
+}
+.about-box li {
+  padding: 0.25rem 0.5rem;
+}
+.about-box li::marker {
+  content: "\e86c";
+  font-family: "Material Icons";
+}
+.about-box:nth-child(2n) {
+  margin: 0 50%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */
