@@ -2,6 +2,9 @@ const hero = document.querySelector(".hero");
 const header = document.querySelector("header");
 const backImg = document.querySelector(".back-img");
 const about = document.querySelector(".about");
+const navButton = document.querySelector(".nav-button");
+const navCheck = document.querySelector(".nav-check");
+
 const shadowValues = [2, 4, 6, 8, 12, 16, 24];
 const colors = [
 	"red",
@@ -112,4 +115,8 @@ window.addEventListener("scroll", () => {
 	// headerOnScroll();
 	aboutOnScroll();
 	backImgOnScroll();
+});
+
+navButton.addEventListener("click", () => {
+	navCheck.classList.toggle("nav-checked");
 });
