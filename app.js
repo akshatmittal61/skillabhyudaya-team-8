@@ -5,6 +5,7 @@ const about = document.querySelector(".about");
 const nav = document.querySelector(".nav");
 const navButton = document.querySelector(".nav-button");
 const navCheck = document.querySelector(".nav-check");
+const hexGrid = document.querySelector(".hex-grid-container");
 
 const shadowValues = [2, 4, 6, 8, 12, 16, 24];
 const colors = [
@@ -124,6 +125,16 @@ const handleNav = () => {
 	}
 };
 
+const renderFestImages = () => {
+	s = "";
+	for (let i = 1; i <= 26; i++) {
+		s += `
+			<div class="hex-in" style='background-image:url(./fest/${i}.JPG);' data-aos="zoom-in"></div>
+	`;
+		hexGrid.innerHTML = s;
+	}
+};
+
 window.addEventListener("scroll", () => {
 	// headerOnScroll();
 	aboutOnScroll();
@@ -136,4 +147,5 @@ navButton.addEventListener("click", () => {
 });
 window.onload = () => {
 	handleNav();
+	renderFestImages();
 };
