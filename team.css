@@ -117,7 +117,7 @@ h4 {
   color: gray;
   margin-bottom: 30px;
 }
-.bc .btn {
+/* .bc .btn {
   padding: 12px 20px;
   background: blue;
   border: none;
@@ -129,13 +129,13 @@ h4 {
   transition: all 0.3s ease-in;
   position: absolute;
   transform: translate(-55px, -140px);
-}
+} */
 
-.bc .btn:hover {
+/* .bc .btn:hover {
   background: transparent;
   color: #0583f2;
   border: 2px solid #0583f2;
-}
+} */
 html::-webkit-scrollbar {
   width: 1.5vw;
   height: 1.5vh;
