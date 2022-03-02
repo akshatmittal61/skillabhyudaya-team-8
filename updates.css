@@ -13,6 +13,7 @@ body{
     color: var(--primary-3);
     animation: headmotion 1.5s ease-in;
     align-self: center;
+    align-items: center;
 }
 #head1:hover{
     transform: scale(1.05);
@@ -54,7 +55,7 @@ body{
     background-color: rgba(0, 0, 0, 0.83);
     border-radius: 1rem;
     transition: transform .2s;
-    width:25%;
+    width:60%;
     min-height: 10rem;
     color:white;
     padding: 1rem;
@@ -70,14 +71,14 @@ body{
     padding: 2rem;
     font-size: 2rem;
     text-align: end;
-    align-self: flex-end;
+    width: 100%;
 }
 #footer i:hover{
     color:white;
 }
 #footer img{
-    width: 5.2rem;
-    height: 4.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
     float: left;
     padding-left: 1rem;
 }

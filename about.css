@@ -76,11 +76,9 @@
     font-size: 2rem;
     line-height: 2.8rem;
     margin:0.5rem;
-
-    
 }
 .cardhead h2{
-    margin: 1.25rem 0;
+    margin: 1.25rem 0rem;
 }
 .cardcontent{
     width: 50%;
@@ -160,9 +158,9 @@
 .cardcontent li{
     padding: 0rem 0.25rem;
 }
-.cardcontent ul li::marker{
+ul li::marker{
     content: '\e86c';
-				font-family: 'Material Icons';
+	font-family: 'Material Icons';
 }
 body{
     background-color: #f0f0f0;
@@ -175,13 +173,39 @@ body{
     padding: 2rem;
     font-size: 2rem;
     text-align: end;
+    width: 100%;
 }
 #footer i:hover{
     color:white;
 }
 #footer img{
-    width: 5.2rem;
-    height: 4.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
     float: left;
     padding-left: 1rem;
+}
+#coc{
+    background-color: rgba(0, 0, 0, 0.83);
+    padding-bottom: 5rem;
+    padding-left:7rem;
+    padding-right:5rem;
+    padding-top: 2.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: white;
+    margin:auto;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    width: 85%;
+    transition: transform .2s;
+   
+}
+#coc:hover{
+    transform: scale(1.05);
+}
+#coc h2{
+    color: var(--primary-2);
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
 }
