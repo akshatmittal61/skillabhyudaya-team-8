@@ -1,0 +1,90 @@
+body{
+    background-color: #f0f0f0;
+    background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+#updateshead{
+    display: flex;
+    justify-content:flex-start;
+}
+#head1{
+    font-size: 4rem;
+    line-height: 4.5rem;
+    color: var(--primary-3);
+    animation: headmotion 1.5s ease-in;
+    align-self: center;
+}
+#head1:hover{
+    transform: scale(1.05);
+}
+@keyframes headmotion {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+#head2{
+    color: var(--primary-2);
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+#forcelogo {
+    -webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+              -o-transition: all 0.5s ease;
+           -ms-transition: all 0.5s ease;
+                  transition: all 0.5s ease;
+    animation: headmotion 1.5s ease-in;
+}
+#forcelogo:hover {
+         -webkit-transform: rotate(-10deg);
+            -moz-transform: rotate(-10deg);
+                 -o-transform: rotate(-10deg);
+              -ms-transform: rotate(-10deg);
+}
+#updatescontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 5rem;
+}
+.updatescard{
+    background-color: rgba(0, 0, 0, 0.83);
+    border-radius: 1rem;
+    transition: transform .2s;
+    width:25%;
+    min-height: 10rem;
+    color:white;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+.updatescard:hover{
+    transform: scale(1.05);
+}
+#footer{
+    margin-top: 5rem;
+    background-color: var(--primary-2);
+    height: 6.5rem;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: end;
+    align-self: flex-end;
+}
+#footer i:hover{
+    color:white;
+}
+#footer img{
+    width: 5.2rem;
+    height: 4.5rem;
+    float: left;
+    padding-left: 1rem;
+}
+#line{
+    background-color: var(--primary-4);
+    display: block;
+    height: 0.5rem;
+    width: 70%;
+    margin: auto;
+}
