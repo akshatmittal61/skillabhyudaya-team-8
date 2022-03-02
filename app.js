@@ -112,6 +112,18 @@ const aboutOnScroll = () => {
 	about.style.opacity = aboutOpacity;
 };
 
+const handleNav = () => {
+	if (navCheck.classList.contains("nav-checked")) {
+		nav.style.zIndex = 100;
+		nav.style.width = "100vw";
+		nav.style.height = "100vh";
+	} else {
+		nav.style.zIndex = 15;
+		nav.style.width = "0";
+		nav.style.height = "0";
+	}
+};
+
 window.addEventListener("scroll", () => {
 	// headerOnScroll();
 	aboutOnScroll();
@@ -120,10 +132,8 @@ window.addEventListener("scroll", () => {
 
 navButton.addEventListener("click", () => {
 	navCheck.classList.toggle("nav-checked");
-	if (navCheck.classList.contains("nav-checked")) nav.style.zIndex = 100;
-	else nav.style.zIndex = -1;
+	handleNav();
 });
 window.onload = () => {
-	if (navCheck.classList.contains("nav-checked")) nav.style.zIndex = 100;
-	else nav.style.zIndex = 15;
+	handleNav();
 };

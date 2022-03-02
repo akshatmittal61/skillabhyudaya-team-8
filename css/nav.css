@@ -1,15 +1,14 @@
 .nav {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 100;
-  width: 100vw;
-  height: 100vh;
 }
 .nav-check {
-  position: absolute;
+  position: fixed;
   top: 2rem;
   right: 2rem;
+  z-index: 110;
 }
 .nav-button {
   background-color: #006eff;
