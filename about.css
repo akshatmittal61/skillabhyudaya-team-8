@@ -167,9 +167,17 @@ video{
 li {
   padding: 0rem 0.25rem;
 }
+ul{
+    padding: 0rem 1rem;
+}
 ul li::marker {
   content: "\e86c";
   font-family: "Material Icons";
+}
+ul li{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding: 0.25rem 0.75rem;
 }
 body {
   background-color: #f0f0f0;
