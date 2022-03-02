@@ -154,8 +154,15 @@ html::-webkit-scrollbar-track {
   text-align: center;
   font-size: 45px;
   font-weight: bold;
-  color: #f2600c;
+  color: #0583f2;
   margin: 30px;
+}
+.line {
+  background-color: #f2600c;
+  display: block;
+  height: 0.5rem;
+  margin: auto;
+  width: 35%;
 }
 .footer {
   width: 100%;
