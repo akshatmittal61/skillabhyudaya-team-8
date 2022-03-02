@@ -149,9 +149,52 @@
   height: 3px;
   background-color: var(--primary-4);
 }
-.what-block p {
+.what-block-content {
   font-size: 1.1rem;
   line-height: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  --s: 200px;
+  --m: 4px;
+  --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+}
+.what-block-content .hexagon {
+  width: var(--s);
+  margin: var(--m);
+  height: calc(var(--s) * 1.1547);
+  height: var(--s);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin-bottom: calc(var(--m) - var(--s) * 0.2885);
+  box-shadow: var(--shadow-elevation-4dp);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--pink);
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+  filter: brightness(0.85);
+}
+.what-block-content .hexagon a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.what-block-content .hexagon a span {
+  margin: 0.5rem 0;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+}
+.what-block-content .hexagon:hover {
+  font-size: 3.5rem;
+  filter: brightness(1);
 }
 .what-block ul {
   padding: 0 1rem;
@@ -174,7 +217,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background: var(--primary-2);
+  background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png"), linear-gradient(rgba(5, 131, 242, 0.9), rgba(5, 131, 242, 0.75), rgba(5, 131, 242, 0.6), rgba(5, 131, 242, 0.45), rgba(5, 131, 242, 0.3), rgba(5, 131, 242, 0.15), rgba(5, 131, 242, 0));
 }
 .gallery-container {
   width: 100%;

@@ -98,6 +98,7 @@ const aboutOnScroll = () => {
 			window.scrollY / vh - t
 		}%, #f0f0f0 ${window.scrollY / vh - t}%)`;
 		aboutOpacity = 1;
+		about.style.zIndex = 5;
 	} else {
 		if (
 			window.scrollY > (t + 101) * vh &&
@@ -107,7 +108,11 @@ const aboutOnScroll = () => {
 				window.scrollY / vh - (t + 101)
 			}%, #2e3141 ${window.scrollY / vh - (t + 101)}%)`;
 			aboutOpacity = ((t + 150) * vh - window.scrollY) / (50 * vh);
-		} else aboutOpacity = 0;
+			about.style.zIndex = 5;
+		} else {
+			aboutOpacity = 0;
+			about.style.zIndex = -1;
+		}
 	}
 	about.style.backgroundImage = aboutBgcolor;
 	about.style.opacity = aboutOpacity;
@@ -127,7 +132,7 @@ const handleNav = () => {
 
 const renderFestImages = () => {
 	s = "";
-	for (let i = 1; i <= 26; i++) {
+	for (let i = 1; i <= 21; i++) {
 		s += `
 			<div class="hex-in" style='background-image:url(./fest/${i}.JPG);' data-aos="zoom-in"></div>
 	`;
