@@ -1,211 +1,315 @@
-.line{
-    background-color: var(--primary-4);
-    display: block;
-    height: 0.5rem;
-    width: 80%;
+.line {
+  background-color: var(--primary-4);
+  display: block;
+  height: 0.5rem;
+  width: 80%;
 }
 #forcelogo {
-    -webkit-transition: all 0.5s ease;
-          -moz-transition: all 0.5s ease;
-              -o-transition: all 0.5s ease;
-           -ms-transition: all 0.5s ease;
-                  transition: all 0.5s ease;
-    animation: headmotion 1.5s ease-in;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  animation: headmotion 1.5s ease-in;
 }
 #forcelogo:hover {
-         -webkit-transform: rotate(-10deg);
-            -moz-transform: rotate(-10deg);
-                 -o-transform: rotate(-10deg);
-              -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
 }
-#abouthead{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#abouthead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#head1{
-    font-size: 4rem;
-    line-height: 4.5rem;
-    margin: auto;
-    color: var(--primary-3);
-    animation: headmotion 1.5s ease-in;
-
+#head1 {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  margin: auto;
+  color: var(--primary-3);
+  animation: headmotion 1.5s ease-in;
 }
-#head1:hover{
-    transform: scale(1.05);
+#head1:hover {
+  transform: scale(1.05);
 }
 @keyframes headmotion {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {
+    opacity: 0;
   }
-#para1{
-    margin:auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 90%;
-    text-align: center;
-    font-size: 1.35rem;
-    line-height: 1.75rem;
+  to {
+    opacity: 1;
+  }
 }
-#video{
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 5rem;
-    margin-bottom: 15rem;
-    width: 100%;
+#para1 {
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+  text-align: center;
+  font-size: 1.35rem;
+  line-height: 1.75rem;
 }
-.cardholder{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    background-color: rgba(0, 0, 0, 0.83);
-    border-radius: 1rem;
-    /* align-items: center; */
-    margin: auto;
-    margin-bottom:5rem;
-    width: 85%;
-    transition: transform .2s;
-   
+#video {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 5rem;
+  margin-bottom: 15rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.cardholder:hover{
-    transform: scale(1.05);
+.cardholder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.83);
+  border-radius: 1rem;
+  /* align-items: center; */
+  margin: auto;
+  margin-bottom: 5rem;
+  width: 85%;
+  transition: transform 0.2s;
 }
-.cardhead{
-    width:40%;
-    color: var(--primary-2);
-    font-size: 2rem;
-    line-height: 2.8rem;
-    margin:0.5rem;
+.cardholder:hover {
+  transform: scale(1.05);
 }
-.cardhead h2{
-    margin: 1.25rem 0rem;
+.cardhead {
+  width: 40%;
+  color: var(--primary-2);
+  font-size: 2rem;
+  line-height: 2.8rem;
+  margin: 0.5rem;
 }
-.cardcontent{
-    width: 50%;
-    padding:1.8rem;
-    margin:0.5rem;
-    font-size: 1rem;
-    line-height: 2rem;
-    color: white;
+.cardhead h2 {
+  margin: 1.25rem 0rem;
 }
-#cardhead1{
-    order:2;
+.cardcontent {
+  width: 50%;
+  padding: 1.8rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: white;
 }
-#cardcontent1{
-    order:1;
+#cardhead1 {
+  order: 2;
 }
-#cardhead2{
-    order:1;
+#cardcontent1 {
+  order: 1;
 }
-#cardcontent2{
-    order:2;
+#cardhead2 {
+  order: 1;
 }
-#cardhead3{
-    order:2;
+#cardcontent2 {
+  order: 2;
 }
-#cardcontent3{
-    order:1;
+#cardhead3 {
+  order: 2;
 }
-#cardhead4{
-    order:1;
+#cardcontent3 {
+  order: 1;
 }
-#cardcontent4{
-    order:2;
+#cardhead4 {
+  order: 1;
 }
-#cardhead5{
-    order:2;
+#cardcontent4 {
+  order: 2;
 }
-#cardcontent5{
-    order:1;
+#cardhead5 {
+  order: 2;
 }
-#cardhead6{
-    order:1;
+#cardcontent5 {
+  order: 1;
 }
-#cardcontent6{
-    order:2;
+#cardhead6 {
+  order: 1;
 }
-#cardhead7{
-    order:2;
+#cardcontent6 {
+  order: 2;
 }
-#cardcontent7{
-    order:1;
+#cardhead7 {
+  order: 2;
 }
-#quote{
-    width: 50%;
-    font-size: 1.2rem;
-    padding:1.8rem;
-    margin:0.5rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: white;
-    order:1;
-    align-self: center;
+#cardcontent7 {
+  order: 1;
 }
-#quote p{
-    margin-bottom:1.25rem;
+#quote {
+  width: 50%;
+  font-size: 1.2rem;
+  padding: 1.8rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: white;
+  order: 1;
+  align-self: center;
 }
-#quotepic{
-    width:20%;
-    margin:0.5rem; 
-    order:2;
+#quote p {
+  margin-bottom: 1.25rem;
+}
+#quotepic {
+  width: 20%;
+  margin: 0.5rem;
+  order: 2;
 }
 
-#quotepic img{
+#quotepic img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 2rem;
+}
+li {
+  padding: 0rem 0.25rem;
+}
+ul li::marker {
+  content: "\e86c";
+  font-family: "Material Icons";
+}
+body {
+  background-color: #f0f0f0;
+  background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+#coc {
+  padding-bottom: 5rem;
+  padding-left: 7rem;
+  padding-right: 5rem;
+  padding-top: 2.5rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: auto;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+  width: 85%;
+}
+#coc h2 {
+  color: var(--primary-2);
+  font-size: 3rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  background-color: rgb(46, 49, 65);
+  color:white;
+}
+@media print {
+  .footer {
+    display: none;
+  }
+}
+.footer-top {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top-side {
+  width: 25%;
+  height: 100%;
+}
+.footer-top-side-logo,
+.footer-top-side-logo__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-top-side-logo__img {
+  object-fit: cover;
+  max-width: 70%;
+  max-height: 70%;
+}
+@media (max-width: 880px) {
+  .footer-top-side {
+    width: 0;
+    display: none;
+  }
+}
+.footer-top-mid {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+@media (max-width: 880px) {
+  .footer-top-mid {
     width: 100%;
-    height: 20rem;
-    border-radius: 2rem;
+  }
 }
-.cardcontent li{
-    padding: 0rem 0.25rem;
+.footer-top-mid-top,
+.footer-top-mid-bottom {
+  height: 30%;
 }
-ul li::marker{
-    content: '\e86c';
-	font-family: 'Material Icons';
+.footer-top-mid-top,
+.footer-top-mid-top__text,
+.footer-top-mid-bottom,
+.footer-top-mid-bottom__text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
-body{
-    background-color: #f0f0f0;
-    background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+.footer-top-mid-mid {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#footer{
-    background-color: var(--primary-2);
-    height: 6.5rem;
-    padding: 2rem;
-    font-size: 2rem;
-    text-align: end;
-    width: 100%;
+.footer-top-mid-mid-socials {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#footer i:hover{
-    color:white;
+.footer-top-mid-mid__social {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#footer img{
-    width: 3.2rem;
-    height: 3.2rem;
-    float: left;
-    padding-left: 1rem;
+.footer-top-mid-mid__social__link {
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#coc{
-    background-color: rgba(0, 0, 0, 0.83);
-    padding-bottom: 5rem;
-    padding-left:7rem;
-    padding-right:5rem;
-    padding-top: 2.5rem;
-    font-size: 1rem;
-    line-height: 2rem;
-    color: white;
-    margin:auto;
-    margin-bottom: 5rem;
-    border-radius: 1rem;
-    width: 85%;
-    transition: transform .2s;
-   
+.footer-top-mid-mid__social__img {
+  object-fit: cover;
+  max-width: 60%;
+  max-height: 60%;
+  filter: invert(1);
 }
-#coc:hover{
-    transform: scale(1.05);
+.footer-bottom {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-#coc h2{
-    color: var(--primary-2);
-    font-size: 3rem;
-    line-height: 4rem;
-    margin-bottom: 2rem;
+.footer-bottom-events {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-bottom__event {
+  padding: 0.25rem 1rem;
 }
