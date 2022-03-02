@@ -173,3 +173,6 @@ img{
     background-size: 300%;
     animation: an 1s infinite alternate;
 }
+p{
+    font-weight: 475;
+}
