@@ -1,0 +1,144 @@
+button {
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	user-select: none;
+	font: inherit;
+}
+.btn {
+	background-color: var(--green);
+	background-color: var(--back-shadow-light);
+	margin: 0.25rem;
+	padding: 0.6rem 1.5rem;
+	border-radius: 5px;
+	border: 2px solid transparent;
+	outline: 2px solid transparent;
+	transition: border-radius 1s ease, outline 0.25s ease-in-out;
+}
+.btn:hover {
+	border-radius: 500px;
+}
+.btn:active,
+.btn:focus {
+	box-shadow: var(--shadow-elevation-4dp);
+	border: 2px solid var(--bgcolor);
+	outline-width: 2px;
+	outline-style: solid;
+}
+.btn.btn-red {
+	background-color: var(--red);
+	color: var(--bgcolor);
+}
+.btn.btn-red:active,
+.btn.btn-red:focus {
+	outline-color: var(--red);
+}
+.btn.btn-pink {
+	background-color: var(--pink);
+	color: var(--bgcolor);
+}
+.btn.btn-pink:active,
+.btn.btn-pink:focus {
+	outline-color: var(--pink);
+}
+.btn.btn-purple {
+	background-color: var(--purple);
+	color: var(--bgcolor);
+}
+.btn.btn-purple:active,
+.btn.btn-purple:focus {
+	outline-color: var(--purple);
+}
+.btn.btn-dark-purple {
+	background-color: var(--dark-purple);
+	color: var(--bgcolor);
+}
+.btn.btn-dark-purple:active,
+.btn.btn-dark-purple:focus {
+	outline-color: var(--dark-purple);
+}
+.btn.btn-indigo {
+	background-color: var(--indigo);
+	color: var(--bgcolor);
+}
+.btn.btn-indigo:active,
+.btn.btn-indigo:focus {
+	outline-color: var(--indigo);
+}
+.btn.btn-light-blue {
+	background-color: var(--light-blue);
+}
+.btn.btn-light-blue:active,
+.btn.btn-light-blue:focus {
+	outline-color: var(--light-blue);
+}
+.btn.btn-cyan {
+	background-color: var(--cyan);
+}
+.btn.btn-cyan:active,
+.btn.btn-cyan:focus {
+	outline-color: var(--cyan);
+}
+.btn.btn-green {
+	background-color: var(--green);
+	color: var(--bgcolor);
+}
+.btn.btn-green:active,
+.btn.btn-green:focus {
+	outline-color: var(--green);
+}
+.btn.btn-light-green {
+	background-color: var(--light-green);
+	color: var(--bgcolor);
+}
+.btn.btn-light-green:active,
+.btn.btn-light-green:focus {
+	outline-color: var(--light-green);
+}
+.btn.btn-yellow {
+	background-color: var(--yellow);
+}
+.btn.btn-yellow:active,
+.btn.btn-yellow:focus {
+	outline-color: var(--yellow);
+}
+.btn.btn-orange {
+	background-color: var(--orange);
+	color: var(--bgcolor);
+}
+.btn.btn-orange:active,
+.btn.btn-orange:focus {
+	outline-color: var(--orange);
+}
+.btn.btn-deep-orange {
+	background-color: var(--deep-orange);
+	color: var(--bgcolor);
+}
+.btn.btn-deep-orange:active,
+.btn.btn-deep-orange:focus {
+	outline-color: var(--deep-orange);
+}
+.btn.btn-brown {
+	background-color: var(--brown);
+	color: var(--bgcolor);
+}
+.btn.btn-brown:active,
+.btn.btn-brown:focus {
+	outline-color: var(--brown);
+}
+.btn.btn-grey {
+	background-color: var(--grey);
+}
+.btn.btn-grey:active,
+.btn.btn-grey:focus {
+	outline-color: var(--grey);
+}
+.btn.btn-blue-grey {
+	background-color: var(--blue-grey);
+	color: var(--bgcolor);
+}
+.btn.btn-blue-grey:active,
+.btn.btn-blue-grey:focus {
+	outline-color: var(--blue-grey);
+}

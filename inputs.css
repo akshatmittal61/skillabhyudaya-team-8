@@ -1,0 +1,16 @@
+input,
+textarea,
+select {
+	border: none;
+	outline: none;
+	background: none;
+	resize: none;
+	font: inherit;
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 5px;
+	margin: 0.25rem 0.75rem;
+	padding: 0.5rem 0.75rem;
+}
+::placeholder {
+	font-size: 0.875rem;
+}
