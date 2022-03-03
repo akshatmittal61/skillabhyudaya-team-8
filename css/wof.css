@@ -23,6 +23,20 @@ body {
 	display: flex;
 	justify-content: flex-start;
 }
+#updateshead .updateshead-mob{
+  object-fit: cover;
+  max-width: 85%;
+  animation: none;
+  display: none;
+}
+@media (max-width: 672px){
+  #updateshead *{
+    display: none;
+  }
+  #updateshead .updateshead-mob{
+    display: inline;
+  }
+}
 #head1 {
 	font-size: 4rem;
 	line-height: 4.5rem;
@@ -75,7 +89,7 @@ body {
 	line-height: 4rem;
 	margin: 1.25rem 0;
 	font-weight: bolder;
-	color: orange;
+	color: var(--primary-2);
 }
 .headcont {
 	text-align: center;

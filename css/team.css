@@ -93,6 +93,20 @@ body {
 	display: flex;
 	justify-content: flex-start;
 }
+#updateshead .updateshead-mob{
+  object-fit: cover;
+  max-width: 85%;
+  animation: none;
+  display: none;
+}
+@media (max-width: 672px){
+  #updateshead *{
+    display: none;
+  }
+  #updateshead .updateshead-mob{
+    display: inline;
+  }
+}
 .bc {
 	grid: text;
 	align-items: center;
