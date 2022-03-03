@@ -134,7 +134,7 @@ const renderFestImages = () => {
 	s = "";
 	for (let i = 1; i <= 21; i++) {
 		s += `
-			<div class="hex-in" style='background-image:url(./fest/${i}.JPG);' data-aos="zoom-in"></div>
+			<div class="hex-in" style='background-image:url(./fest/${i}.jpeg);' data-aos="zoom-in"></div>
 	`;
 		hexGrid.innerHTML = s;
 	}

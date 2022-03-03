@@ -105,6 +105,11 @@
   background-blend-mode: darken;
   background-color: rgba(0, 0, 0, 0.6);
 }
+@media (max-width: 972px) {
+  .what {
+    height: 125vh;
+  }
+}
 .what-container {
   width: 100%;
   height: 100%;
@@ -156,7 +161,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: 4.5rem 0;
   --s: 200px;
   --m: 4px;
   --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
@@ -218,11 +223,16 @@
   align-items: center;
   padding: 2rem;
   margin-bottom: 2rem;
-  background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png"), linear-gradient(rgba(5, 131, 242, 0.9), rgba(5, 131, 242, 0.75), rgba(5, 131, 242, 0.6), rgba(5, 131, 242, 0.45), rgba(5, 131, 242, 0.3), rgba(5, 131, 242, 0.15), rgba(5, 131, 242, 0));
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png"), linear-gradient(rgba(5, 131, 242, 0.9), rgba(5, 131, 242, 0.75), rgba(5, 131, 242, 0.6), rgba(5, 131, 242, 0.45), rgba(5, 131, 242, 0.3), rgba(5, 131, 242, 0.15), rgba(5, 131, 242, 0));
 }
 .gallery-container {
   width: 100%;
   height: 100%;
+}
+@media (max-width: 672px) {
+  .gallery {
+    padding: 2rem 0;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -21,12 +21,21 @@
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 672px) {
+  .hex-grid-container div {
+    margin: 0;
+  }
+}
 .hex-grid-container::before {
   content: "";
   width: calc(var(--s) / 2 + var(--m));
   float: left;
   height: 120%;
   shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px), #000 0 var(--f));
+}
+
+.hex-in {
+  background-color: var(--primary-2);
 }
 
 /*# sourceMappingURL=hexagon-grid.css.map */

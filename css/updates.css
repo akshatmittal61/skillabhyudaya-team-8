@@ -1,11 +1,25 @@
 body {
 	background-color: #f0f0f0;
-	background-image: url("https://www.transparenttextures.com/patterns/crissxcross.png");
+	background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 #updateshead {
 	display: flex;
 	justify-content: flex-start;
+}
+#updateshead .updateshead-mob {
+	object-fit: cover;
+	max-width: 85%;
+	animation: none;
+	display: none;
+}
+@media (max-width: 672px) {
+	#updateshead * {
+		display: none;
+	}
+	#updateshead .updateshead-mob {
+		display: inline;
+	}
 }
 #head1 {
 	font-size: 4rem;
@@ -34,6 +48,11 @@ body {
 	font-size: 2rem;
 	line-height: 3rem;
 }
+@media (max-width: 672px) {
+	#head2 {
+		width: 60%;
+	}
+}
 #forcelogo {
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -50,11 +69,9 @@ body {
 	transform: rotate(-10deg);
 }
 #updatescontainer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
 	width: 100%;
 	margin-top: 5rem;
+	overflow: hidden;
 }
 .updatescard {
 	background-color: rgba(0, 0, 0, 0.83);
