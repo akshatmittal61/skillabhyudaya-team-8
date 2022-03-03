@@ -124,6 +124,7 @@ const executives = [
 		img: "team/1_Akshat_Mittal.JPG",
 		name: "Akshat Mittal",
 		position: "Executive Member",
+        link: "https://linkedin.com/in/akshatmittal61"
 	},
 	{
 		img: "team/1_Rohit_kumar_gupta.jpg",
