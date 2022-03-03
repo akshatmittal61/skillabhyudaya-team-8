@@ -64,7 +64,7 @@ body{
     font-size: 4rem;
     line-height: 4.5rem;
     color: var(--primary-3);
-    animation: headmotion 1.5s ease-in;
+    animation: headmotion 1.5s ease-in-out;
     align-self: center;
     align-items: center;
 }
@@ -81,13 +81,14 @@ body{
               -o-transition: all 0.5s ease;
            -ms-transition: all 0.5s ease;
                   transition: all 0.5s ease;
-    animation: headmotion 1.5s ease-in;
+    animation: headmotion 1.5s ease-in-out;
 }
 #forcelogo:hover {
          -webkit-transform: rotate(-10deg);
             -moz-transform: rotate(-10deg);
                  -o-transform: rotate(-10deg);
               -ms-transform: rotate(-10deg);
+              transform: rotate(-10deg);
 }
 @keyframes an{
     0%{
@@ -109,12 +110,11 @@ body{
     color: orange;
     /* background-color: orange; */
 }
-.heading:hover{
- 
-}
 .headcont{
     text-align: center;
-    font-size: 30px;
+    font-size: 1.25rem;
+    width: 85%;
+    margin: 0 auto;
 }
 .card{
     display: grid;
@@ -184,9 +184,9 @@ img{
     text-align: center;
     justify-content: center;
     color: orange;
-    text-decoration-line: underline;
-    text-decoration-color: #ffffff;
-    text-decoration-thickness: 2px;
+    /* text-decoration-line: underline; */
+    /* text-decoration-color: #ffffff; */
+    /* text-decoration-thickness: 2px; */
 }
 .el{
     font-size: large;
