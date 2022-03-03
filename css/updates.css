@@ -45,8 +45,8 @@ body {
 	width: 30%;
 	text-align: center;
 	margin: auto;
-	font-size: 2rem;
-	line-height: 3rem;
+	font-size: 3rem;
+	line-height: 4rem;
 }
 @media (max-width: 672px) {
 	#head2 {
