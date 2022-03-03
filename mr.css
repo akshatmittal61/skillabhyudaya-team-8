@@ -1,0 +1,24 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+
+}
+.grass .sky .road{
+    position: relative;
+}
+.sky{
+    height: 40%;
+    background-color: skyblue;
+}
+.grass{
+    background-color: darkgreen;
+    height: 30%;
+}
+.road{
+    background: gray;
+    height: 30%;
+    border-top: 10px solid red;
+    border-bottom: 10px solid blue;
+}
